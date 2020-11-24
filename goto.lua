@@ -93,19 +93,27 @@ function checkTurtleDown() --Don't break other turtles. Wait for other turtles t
 end
 
 
+--[[orientation will be:
+-x = 1
+-z = 2
++x = 3
++z = 4
+This matches exactly with orientation in game, except that Minecraft uses 0 for +z instead of 4.
+--]]
 function faceDir(target_dir)
     local dir = getOrientation()
     -- face the right direction
     if dir ~= target_dir then
         local turns = target_dir - dir
+        print(turns)
 
         if turns > 0 then
             for i = 1, turns do
-                print("TURN LEFT")
+                print("TURN RIGHT")
                 turtle.turnRight()
             end
         elseif turns < 0 then
-            for i = 1, (dir - target_dir) do
+            for i = 1, 4 + turns do
                 print("TURN LEFT")
                 turtle.turnLeft()
             end
