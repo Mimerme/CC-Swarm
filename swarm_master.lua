@@ -6,7 +6,7 @@ local HOST = "OBAMA"
 task_queue = {}
 slave_status = {}
 
-rednet.open("right")
+rednet.open("back")
 rednet.host(PROTO, HOST)
 
 

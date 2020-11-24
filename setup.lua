@@ -15,7 +15,8 @@ print("Downloading home")
 shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/home.lua")
 
 print("Downloading goto")
-shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/goto.lua")
+--shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/goto.lua")
+shell.run("pastebin get HS3Vv8z8 goto")
 
 print("Downloading slave")
 shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/swarm_slave.lua")
