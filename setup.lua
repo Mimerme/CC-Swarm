@@ -2,16 +2,16 @@ print("Downloading scripts from pastebin...")
 print("MrMrMr Obama")
 
 print("Downloading sethome")
-shell.run("pastebin get G5nLbC4V sethome")
+shell.run("https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/sethome.lua")
 
 print("Downloading home")
-shell.run("pastebin get wuh98zT3 home")
+shell.run("https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/home.lua")
 
 print("Downloading goto")
-shell.run("pastebin get y8MkajhE goto")
+shell.run("https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/goto.lua")
 
 print("Downloading slave")
-shell.run("pastebin get swarm_slave")
+shell.run("https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/swarm_slave.lua")
 
 print("Downloading master")
-shell.run("pastebin get swarm_master")
+shell.run("https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/swarm_master.lua")
