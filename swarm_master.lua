@@ -63,9 +63,11 @@ print("Paired " .. tostring(slave_count) .. " slaves")
 rednet.unhost(PROTO)
 
 function Split(s, delimiter)
-    words = {}
-    for word in s:gmatch("%w+") do table.insert(words, word) end
-    return words
+    chunks = {}
+    for substring in s:gmatch("%S+") do
+        table.insert(chunks, substring)
+    end
+    return chunks
 end
 
 function table.slice(tbl, first, last, step)
