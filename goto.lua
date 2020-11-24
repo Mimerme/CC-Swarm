@@ -105,16 +105,12 @@ function faceDir(target_dir)
     -- face the right direction
     if dir ~= target_dir then
         local turns = target_dir - dir
-        print(turns)
-
         if turns > 0 then
             for i = 1, turns do
-                print("TURN RIGHT")
                 turtle.turnRight()
             end
         elseif turns < 0 then
-            for i = 1, 4 + turns do
-                print("TURN LEFT")
+            for i = 1, math.abs(turns) do
                 turtle.turnLeft()
             end
         end
