@@ -7,6 +7,7 @@ shell.run("delete home.lua")
 shell.run("delete goto.lua")
 shell.run("delete swarm_slave.lua")
 shell.run("delete swarm_master.lua")
+shell.run("delete new_goto.lua")
 
 print("Downloading sethome")
 shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/sethome.lua")
@@ -17,6 +18,10 @@ shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/home.lua
 print("Downloading goto")
 --shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/goto.lua")
 shell.run("pastebin get HS3Vv8z8 goto")
+
+print("Downloading new_goto")
+shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/new_goto.lua")
+
 
 print("Downloading slave")
 shell.run("wget https://raw.githubusercontent.com/Mimerme/CC-Swarm/main/swarm_slave.lua")
